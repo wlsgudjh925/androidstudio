@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_margin="10dp"
+        android:text="선택을 시작하시겠습니까?"
+        />
+    <CheckBox
+        android:id="@+id/chkagree"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="시작함"
+        ></CheckBox>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_margin="10dp"
+        android:text="좋아하는 반려동물은?"
+        android:visibility="invisible"
+        />
+    <RadioGroup
+        android:id="@+id/rgroup1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="invisible">
+        <RadioButton
+            android:id="@+id/rbtdog"
+            android:text="강아지"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/rbtcat"
+            android:text="고양이"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/rbtrabbit"
+            android:text="토끼"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택 완료"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        />
+    <ImageView
+        android:id="@+id/imgpet"
+        android:layout_height="256dp"
+        android:layout_width="256dp"
+        android:visibility="invisible"
+        />
+
+
+</LinearLayout>
